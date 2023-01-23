@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 0;
+}
+.header__row_list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.header__row_list li {
+  margin-left: 48px;
+}
+.header__row_logo img {
+  width: 170px;
+}

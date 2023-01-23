@@ -1,0 +1,74 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+.accordionElement {
+  position: relative;
+  /*clip-path: polygon(4% 0, 100% 0, 100% 80%, 96% 100%, 0 100%, 0 20%);*/
+  /*background-color: rgb(25, 29, 59);*/
+  width: 610px;
+  padding: 16.5px 70px 16.5px 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  /*transition: all 0.2s ease;*/
+  cursor: pointer;
+  background-image: url('../public/SubtractStepMini.png');
+  background-repeat: no-repeat;
+}
+.active {
+  padding: 27px 70px 27px 24px;
+  background-image: url('../public/SubtractStep.png');
+}
+.accordionElement > h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.active > h4 {
+  margin-bottom: 16px;
+}
+.accordionElement > p {
+  display: none;
+}
+.active > p {
+  display: flex;
+}
+
+.accordionElement__show {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 20px;
+  top: 10px;
+}
+
+.accordionElement__show_line_1 {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  top: 7px;
+  right: 0;
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+}
+
+.accordionElement__show_line_2 {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  top: 0;
+  right: 7px;
+  width: 2px;
+  height: 16px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.active .accordionElement__show_line_2 {
+  transform: rotate(90deg);
+}
+.accordionElement__show_container {
+  position: relative;
+}

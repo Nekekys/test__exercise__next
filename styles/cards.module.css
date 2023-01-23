@@ -1,0 +1,131 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 188px;
+  height: 188px;
+  background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
+  border-radius: 50%;
+}
+.card__img > img {
+  width: 184px;
+  height: 184px;
+  border-radius: 50%;
+}
+.card > h4 {
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+}
+
+.card > p {
+  max-width: 185px;
+}
+
+/***************************/
+
+.cardPT {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /*background: rgba(255, 255, 255, 0.05);*/
+  /*backdrop-filter: blur(5px);*/
+  /*border-radius: 16px;*/
+  /*clip-path: polygon(100% 0, 100% 85%, 80% 100%, 0 100%, 0 0);*/
+  width: 181px;
+  height: 230px;
+  background-image: url('../public/Subtract.png');
+}
+.cardPT__img {
+  margin-top: 24px;
+}
+.cardPT > h4 {
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+/***************************/
+.cardSteps {
+  border: 1px solid #0c102d;
+  background-repeat: no-repeat;
+  background-color: rgb(12, 16, 45);
+  position: relative;
+  border-radius: 18px;
+  z-index: 50;
+}
+.cardSteps__main {
+  background: rgb(25, 29, 59);
+  position: relative;
+  border-radius: 8px;
+  border: solid 2px transparent;
+  padding: 24px;
+  z-index: auto;
+}
+.cardSteps__main::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  bottom: -3px;
+  left: -3px;
+  right: -4px;
+  background: linear-gradient(354deg, rgba(156, 55, 253, 0.7) 0%, rgba(21, 191, 253, 0.7) 100%);
+  border-radius: 8px;
+  z-index: -1;
+}
+.cardSteps__main > h3 {
+  margin: 16px 0;
+}
+.cardSteps__main > p {
+  max-width: 408px;
+}
+.cardSteps__left {
+  margin-bottom: 144px;
+  background-position: right;
+  background-image: url('../public/VectorSteps.svg');
+}
+.cardSteps__left > .cardSteps__main {
+  margin: 20px 18px 20px 2px;
+}
+.cardSteps__right {
+  margin-top: 144px;
+  background-position: left;
+  background-image: url('../public/VectorStepR.svg');
+}
+.cardSteps__right > .cardSteps__main {
+  margin: 20px 2px 20px 18px;
+}
+
+.cardSteps__arrow__group{
+  position: absolute;
+  top: 102px;
+  display: flex;
+  align-items: center;
+}
+.cardSteps__right .cardSteps__arrow__group>img{
+  margin-right: 4px;
+}
+.cardSteps__arrow__group_circle{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: block;
+  background: #3B48D0;
+}
+.cardSteps__left .cardSteps__arrow__group{
+  right: -124px;
+}
+.cardSteps__right .cardSteps__arrow__group{
+  left: -122px;
+  transform: rotate(180deg);
+}
+.cardSteps__left .cardSteps__arrow__group_circle{
+  margin-left: 4px;
+}
+/***************************/

@@ -1,0 +1,30 @@
+.main__column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 189px;
+}
+.main__column_first_row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.main__column_first_row p {
+  max-width: 359px;
+  margin-left: 42px;
+  margin-bottom: 36px;
+}
+
+.main__column_second_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main__column_second_row h1 {
+  margin-left: 24px;
+}
+
+.main__column_third_row {
+  display: flex;
+  justify-content: flex-end;
+}

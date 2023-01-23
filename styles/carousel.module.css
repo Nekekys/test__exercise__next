@@ -1,0 +1,82 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  margin-left: 23px;
+}
+.carousel__control_panel {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.carousel__control_panel__arrow > button {
+  transition: all 0.3s ease;
+}
+.carousel__control_panel__arrow > button:hover {
+  opacity: 0.8;
+}
+.carousel__control_panel__arrow_left {
+  width: 40px;
+  height: 40px;
+}
+.carousel__control_panel__arrow_right {
+  width: 40px;
+  height: 40px;
+  margin-left: 24px;
+}
+.carousel__control_panel__count > span{
+  font-family: 'Clash Display';
+}
+/*****************/
+.carousel__container {
+  display: flex;
+  justify-content: space-between;
+}
+.carouselElem {
+  width: 184px;
+  margin-left: 25px;
+  /*clip-path: polygon(100% 0, 100% 89%, 75% 100%, 0 100%, 0 0);*/
+  /*border-radius: 16px;*/
+  position: relative;
+}
+.carouselElem::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  bottom: 3px;
+  left: -1px;
+  right: 1px;
+  clip-path: polygon(100% 0, 100% 89%, 75% 100%, 0 100%, 0 0);
+  background: linear-gradient(354deg, rgba(21, 191, 253, 0.7) 0%, rgba(156, 55, 253, 0.7) 100%);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.carouselElem > img {
+  clip-path: polygon(100% 0, 100% 89%, 75% 100%, 0 100%, 0 0);
+  border-radius: 16px;
+  width: 182px;
+  height: 441px;
+  object-fit: cover;
+  object-position: center;
+}
+.carouselElemActive {
+  width: 392px;
+  margin-left: 0;
+}
+.carouselElemActive::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  bottom: 3px;
+  left: -1px;
+  right: 1px;
+  clip-path: polygon(100% 0, 100% 82%, 80% 100%, 0 100%, 0 0);
+  background: linear-gradient(354deg, rgba(21, 191, 253, 0.7) 0%, rgba(156, 55, 253, 0.7) 100%);
+  border-radius: 16px;
+  z-index: -1;
+}
+.carouselElemActive > img {
+  width: 390px;
+  clip-path: polygon(100% 0, 100% 82%, 80% 100%, 0 100%, 0 0);
+}
